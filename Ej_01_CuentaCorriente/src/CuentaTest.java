@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class CuentaTest {
     public static boolean validarCuenta(Cuenta cuenta1){
         boolean resultado= false;
-        String letras = cuenta1.numCuenta.substring(0, 2);
-        String ccc1 = cuenta1.numCuenta.substring(4, 8);
-        String ccc2 = cuenta1.numCuenta.substring(8, 12);
-        String ccc3 = cuenta1.numCuenta.substring(14, 19);
-        String ccc4 = cuenta1.numCuenta.substring(19, 24);
-        String dc1=cuenta1.numCuenta.substring(12, 13);
-        String dc2=cuenta1.numCuenta.substring(13, 14);
+        String letras = cuenta1.getNumCuenta().substring(0, 2);
+        String ccc1 = cuenta1.getNumCuenta().substring(4, 8);
+        String ccc2 = cuenta1.getNumCuenta().substring(8, 12);
+        String ccc3 = cuenta1.getNumCuenta().substring(14, 19);
+        String ccc4 = cuenta1.getNumCuenta().substring(19, 24);
+        String dc1=cuenta1.getNumCuenta().substring(12, 13);
+        String dc2=cuenta1.getNumCuenta().substring(13, 14);
         int sumaA=0;
         int sumaB=0;
         int sumaD=0; 
@@ -65,7 +65,7 @@ public class CuentaTest {
             } else if (digito2 == 11) {
                 digito2 = 0;
             }
-            if (cuenta1.numCuenta.length()==24 && letras.equalsIgnoreCase("ES")){
+            if (cuenta1.getNumCuenta().length()==24 && letras.equalsIgnoreCase("ES")){
                 if (digito1 == digitoControl1 && digito2 == digitoControl2) {
                     resultado = true;
                 }
@@ -76,23 +76,40 @@ public class CuentaTest {
         } 
         return resultado;
     }
-    public static String transferencia(Cuenta origen, Cuenta destino, double cantidad){
-        String resultado="Operacion fallida";
-        if (origen.sacarDinero(cantidad)!=null){
-            destino.ingresarDinero(cantidad);
-            resultado="Operacion realizada correctamente";
+    public static void transferencia(Cuenta origen, Cuenta destino, double cantidad) {
+        double retiro=origen.getImporteRetiro();
+        double saldo=origen.getSaldo();
+        double ingreso=destino.getImporteIngreso();
+        
+        if (retiro+cantidad<origen.getImporteMaxRetiro() && saldo-cantidad>0 && ingreso+cantidad<destino.getImporteMaxIngreso()){
+            System.out.println(origen.sacarDinero(cantidad));
+            System.out.println(destino.ingresarDinero(cantidad));
         }
-        return resultado;
+        else if(ingreso+cantidad>destino.getImporteMaxIngreso()){
+            System.out.println(destino.ingresarDinero(cantidad));
+        }
+        else if (retiro+cantidad<origen.getImporteMaxRetiro()){
+            System.out.println(origen.sacarDinero(cantidad));
+        }
+        else {
+            try {
+                throw new NumeroNegativoException();
+            } catch (NumeroNegativoException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        
     }
     public static void main(String[] args) throws Exception {
 
         Cuenta cuenta1=new Cuenta("00001A","Pablo", "ES8701282851526173526918", 30000.0);
-        Cuenta cuenta2=new Cuenta("00002A","Pepe", "ES1212345678999876543210", 30000.0);       
+        Cuenta cuenta2=new Cuenta("00002A","Pepe", "ES1212345678999876543210", 1000.0);       
 
         System.out.println("Validacion "+validarCuenta(cuenta1));
         System.out.println("Validacion "+validarCuenta(cuenta2));
         
-        System.out.println("Ingreso 100 cuenta 1 "+cuenta1.ingresarDinero(100));
+        /*System.out.println("Ingreso 100 cuenta 1 "+cuenta1.ingresarDinero(100));
         System.out.println("Ingreso 100 cuenta 2 "+cuenta2.ingresarDinero(100));
         System.out.println("Retiro 100 cuenta 1 "+cuenta1.sacarDinero(100));
         System.out.println("Retiro 100 cuenta 2 "+cuenta2.sacarDinero(100));
@@ -103,7 +120,7 @@ public class CuentaTest {
         System.out.println("Ingreso 100 cuenta 2 "+cuenta2.ingresarDinero(7000)+" "+cuenta2.mostrarSaldo());
         System.out.println("Retiro 100 cuenta 1 "+cuenta1.sacarDinero(7000)+" "+cuenta1.mostrarSaldo());
         cuenta1.cambioTitular("pepepepepepepepepe");
-        System.out.println(cuenta1);
+        System.out.println(cuenta1);*/
 
         System.out.println("\n******************\n");
         System.out.println("NOTA: Puedes comentar las líneas superiores para que no afecten las limitaciones y probar con el menú de la app ");
@@ -126,7 +143,7 @@ public class CuentaTest {
                     case 1:
                         System.out.println("Introduce la cantidad");
                         double cantidad=sc.nextDouble();
-                        transferencia(cuenta2, cuenta1, cantidad);
+                        transferencia(cuenta1, cuenta2, cantidad);
                         System.out.println(cuenta2.mostrarSaldo()); 
                         System.out.println(cuenta1.mostrarSaldo()); 
                         break;

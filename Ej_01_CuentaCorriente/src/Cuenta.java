@@ -1,12 +1,12 @@
 public class Cuenta {
-    String dni;
-    String nombre;
-    String numCuenta;
-    Double saldo;
-    Double importeMaxRetiro=3000.0;
-    Double importeMaxIngreso=6000.0;
-    Double importeRetiro=0.0;
-    Double importeIngreso=0.0;
+    private String dni;
+    private String nombre;
+    private String numCuenta;
+    private Double saldo;
+    private Double importeMaxRetiro=10000.0;
+    private Double importeMaxIngreso=6000.0;
+    private static Double importeRetiro=0.0;
+    private static Double importeIngreso=0.0;
 
     public Cuenta(Double saldo, String numCuenta){
         this.saldo=saldo;
@@ -42,27 +42,65 @@ public class Cuenta {
     public void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
-
-    public String sacarDinero(double cantidad){
+    public Double getImporteMaxRetiro() {
+        return importeMaxRetiro;
+    }
+    public void setImporteMaxRetiro(Double importeMaxRetiro) {
+        this.importeMaxRetiro = importeMaxRetiro;
+    }
+    public Double getImporteMaxIngreso() {
+        return importeMaxIngreso;
+    }
+    public void setImporteMaxIngreso(Double importeMaxIngreso) {
+        this.importeMaxIngreso = importeMaxIngreso;
+    }
+    public static Double getImporteRetiro() {
+        return importeRetiro;
+    }
+    public static void setImporteRetiro(Double importeRetiro) {
+        Cuenta.importeRetiro = importeRetiro;
+    }
+    public static Double getImporteIngreso() {
+        return importeIngreso;
+    }
+    public static void setImporteIngreso(Double importeIngreso) {
+        Cuenta.importeIngreso = importeIngreso;
+    }
+    public String sacarDinero(double cantidad) {
         try {
-            // Validar importe máximo a retirar en un mismo día
+
             if (importeRetiro + cantidad > importeMaxRetiro) {
                 throw new Exception("Se ha superado el importe máximo a retirar en un día.");
             }
             
-            // Validar descubiertos
             if (saldo - cantidad < 0) {
-                throw new Exception("No tiene fondos suficientes para realizar esta operación.");
+                throw new NumeroNegativoException();
             }
             
-            // Realizar la operación de retiro
             saldo -= cantidad;
             importeRetiro += cantidad;
             
-            return "Operación de retiro realizada con éxito. Nuevo saldo: " + saldo;
+            return "Operación de retiro realizada con éxito";
         } catch (Exception e) {
             return "Error: " + e.getMessage();
         } 
+        /*try {
+
+            if (importeRetiro + cantidad > importeMaxRetiro) {
+                throw new Exception("Se ha superado el importe máximo a retirar en un día.");
+            }
+            
+            if (saldo - cantidad < 0) {
+                throw new NumeroNegativoException();
+            }
+            
+            saldo -= cantidad;
+            importeRetiro += cantidad;
+            
+            return "Operación de retiro realizada con éxito";
+        } catch (Exception e) {
+            return "Error: " + e.getMessage();
+        } */
     }
         
     public String ingresarDinero(double cantidad) {
@@ -76,7 +114,7 @@ public class Cuenta {
             saldo += cantidad;
             importeIngreso += cantidad;
             
-            return "Operación de ingreso realizada con éxito. Nuevo saldo: " + saldo;
+            return "Operación de ingreso realizada con éxito.";
         } catch (Exception e) {
             return "Error: " + e.getMessage();
         }
