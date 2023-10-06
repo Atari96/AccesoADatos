@@ -123,7 +123,7 @@ public class CuentaTest {
         System.out.println(cuenta1);*/
 
         System.out.println("\n******************\n");
-        System.out.println("NOTA: Puedes comentar las líneas superiores para que no afecten las limitaciones y probar con el menú de la app ");
+        System.out.println("NOTA: Puedes comentar/descomentar las líneas superiores para que no afecten las limitaciones y probar con el menú de la app ");
         System.out.println("\n******************\n");
 
         String menu="BANCO MORATO, La app de su banco amigo :)\nElige la operacion que deseas realizar\n"+
@@ -136,7 +136,7 @@ public class CuentaTest {
         int opcion=0;
         while (opcion !=5){
             System.out.println(menu);
-            System.out.println("Elige una opción");
+            System.out.println("Elige una opción\n");
             Scanner sc = new Scanner(System.in);
                 opcion=sc.nextInt();
                 switch (opcion){
