@@ -24,7 +24,7 @@ public class Punto3D extends Punto{
         return distancia;
     }
 
-    public boolean equals(Punto3D p1, Punto3D p2){
+    public static boolean equals(Punto3D p1, Punto3D p2){
         boolean iguales=false;
         if (p1.getCoordenadaX()==p2.getCoordenadaX() && 
                 p1.getCoordenadaY()==p2.getCoordenadaY() && 

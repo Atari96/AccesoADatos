@@ -24,7 +24,7 @@ public class Punto {
         this.coordenadaY = coordenadaY;
     }
 
-    public boolean equals(Punto p1, Punto p2){
+    public static boolean equals(Punto p1, Punto p2){
         boolean iguales=false;
         if (p1.getCoordenadaX()==(p2.getCoordenadaX()) && p1.getCoordenadaY()==(p2.getCoordenadaY())){
             iguales=true;
