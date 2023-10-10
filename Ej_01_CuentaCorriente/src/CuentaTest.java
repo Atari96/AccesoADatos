@@ -124,6 +124,7 @@ public class CuentaTest {
 
         System.out.println("\n******************\n");
         System.out.println("NOTA: Puedes comentar/descomentar las líneas superiores para que no afecten las limitaciones y probar con el menú de la app ");
+        System.out.println("Ojo: Al tener solo dos cuentas no es posible comprobar a la vez la cantidad max y minima");
         System.out.println("\n******************\n");
 
         String menu="BANCO MORATO, La app de su banco amigo :)\nElige la operacion que deseas realizar\n"+
@@ -144,15 +145,19 @@ public class CuentaTest {
                         System.out.println("Introduce la cantidad");
                         double cantidad=sc.nextDouble();
                         transferencia(cuenta1, cuenta2, cantidad);
-                        System.out.println(cuenta2.mostrarSaldo()); 
-                        System.out.println(cuenta1.mostrarSaldo()); 
+                        System.out.println("saldo cuenta2: "+cuenta2.mostrarSaldo()); 
+                        System.out.println("saldo cuenta1: "+cuenta1.mostrarSaldo()); 
+                        System.out.println("Importe retiro cuenta1: "+cuenta1.getImporteRetiro());
+                        System.out.println("Importe ingreso cuenta2: "+cuenta2.getImporteIngreso()+"\n");
                         break;
                     case 2:
                         System.out.println("Introduce la cantidad");
                         cantidad=sc.nextDouble();
                         transferencia(cuenta2, cuenta1, cantidad);
-                        System.out.println(cuenta2.mostrarSaldo()); 
-                        System.out.println(cuenta1.mostrarSaldo()); 
+                        System.out.println("saldo cuenta2: "+cuenta2.mostrarSaldo()); 
+                        System.out.println("saldo cuenta1: "+cuenta1.mostrarSaldo()); 
+                        System.out.println("Importe retiro cuenta2: "+cuenta2.getImporteRetiro());
+                        System.out.println("Importe ingreso cuenta2: "+cuenta1.getImporteIngreso()+"\n");
                         break;
                     case 3:
                         System.out.println("Introduce el titular");

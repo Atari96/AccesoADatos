@@ -3,7 +3,7 @@ public class Cuenta {
     private String nombre;
     private String numCuenta;
     private Double saldo;
-    private Double importeMaxRetiro=10000.0;
+    private Double importeMaxRetiro=3000.0;
     private Double importeMaxIngreso=6000.0;
     private static Double importeRetiro=0.0;
     private static Double importeIngreso=0.0;
