@@ -1,0 +1,3 @@
+CIUDAD   FECHA   Tmax    Tmin
+sebastopol 2020-01-01 23 11
+tegucigalpa 2020-01-05 34 12

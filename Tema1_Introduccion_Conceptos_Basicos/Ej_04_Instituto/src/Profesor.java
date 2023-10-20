@@ -12,7 +12,7 @@ public class Profesor extends Personas{
         this.sMateria = sMateria;
     }
     public String toString() {
-        return super.toString()+"Profesor, sMateria: " + sMateria;
+        return super.toString()+" Profesor, sMateria: " + sMateria;
     }
     
 }
