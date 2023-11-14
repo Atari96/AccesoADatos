@@ -23,7 +23,6 @@ public class TemperaturaTest {
             fw.write("\n");
             fw.close();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         

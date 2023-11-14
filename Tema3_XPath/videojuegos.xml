@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<videojuegos>
+    <videojuego nivel="Facil">
+        <nombre>Comecocos</nombre>
+        <plataforma>PC</plataforma>
+        <precio>7,50</precio>
+    </videojuego>
+    <videojuego nivel="Medio">
+        <nombre>God of war</nombre>
+        <plataforma>ps4</plataforma>
+        <precio>19,95</precio>
+    </videojuego>
+    <videojuego nivel="Avanzado">
+        <nombre>Forza horizont</nombre>
+        <plataforma>PC</plataforma>
+        <precio>22</precio>
+    </videojuego>
+    <videojuego nivel="Facil">
+        <nombre>Mario Kart</nombre>
+        <plataforma>Nintendo</plataforma>
+        <precio>7,50</precio>
+    </videojuego>
+    <videojuego nivel="Medio">
+        <nombre>Uncharted 4</nombre>
+        <plataforma>ps4</plataforma>
+        <precio>15</precio>
+    </videojuego>
+    <videojuego nivel="Avanzado">
+        <nombre>CyberPunk</nombre>
+        <plataforma>ps4</plataforma>
+        <precio>25</precio>
+    </videojuego>
+    <videojuego nivel="Medio">
+        <nombre>Assassins Creed: Origins</nombre>
+        <plataforma>ps4</plataforma>
+        <precio>20</precio>
+    </videojuego>
+    <videojuego nivel="Avanzado">
+        <nombre>Gta6</nombre>
+        <plataforma>ps4</plataforma>
+        <precio>60</precio>
+    </videojuego>
+    
+</videojuegos>

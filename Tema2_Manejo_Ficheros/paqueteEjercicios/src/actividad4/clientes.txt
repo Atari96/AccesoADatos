@@ -1,0 +1,7 @@
+abc, 1, fecha Nacimiento:1, saldo: 3.0
+2, 2, fecha Nacimiento:2, saldo: 1.0
+3, 3, fecha Nacimiento:3, saldo: 1.0
+4, 4, fecha Nacimiento:4, saldo: 55.0
+4, 4, fecha Nacimiento:4, saldo: 55.0
+2, 2, fecha Nacimiento:2, saldo: 1.0
+3, 3, fecha Nacimiento:3, saldo: 1.0

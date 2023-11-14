@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<equiposNBA>
+    <equipo>
+        <Localidad id="1">Toronto</Localidad>
+        <ciudad habitantes="123456789"></ciudad>
+        <nombre>Toronto Raptors</nombre>
+        <Ligas>2</Ligas>
+    </equipo>
+    <equipo>
+        <Localidad id="2">Miami</Localidad>
+        <ciudad habitantes="123456789"></ciudad>
+        <nombre>Miami Heat</nombre>
+        <Ligas>3</Ligas>
+    </equipo>
+    <equipo>
+        <Localidad id="3">Nueva York</Localidad>
+        <ciudad habitantes="123456789"></ciudad>
+        <nombre>Brooklin Nets</nombre>
+        <Ligas>3</Ligas>
+    </equipo>
+    <equipo>
+        <Localidad id="4">San Antonio</Localidad>
+        <ciudad habitantes="123456789"></ciudad>
+        <nombre>San Antonio Spurs</nombre>
+        <Ligas>7</Ligas>
+    </equipo>
+    <equipo>
+        <Localidad id="5">Chicago</Localidad>
+        <ciudad habitantes="123456789"></ciudad>
+        <nombre>Chicago Bulls</nombre>
+        <Ligas>11</Ligas>
+    </equipo>
+    <equipo>
+        <Localidad id="6">Dallas</Localidad>
+        <ciudad habitantes="123456789"></ciudad>
+        <nombre>Dallas Maverick</nombre>
+        <Ligas>6</Ligas>
+    </equipo>
+    <equipo>
+        <Localidad id="7">New York</Localidad>
+        <ciudad habitantes="123456789"></ciudad>
+        <nombre>New York Nicks</nombre>
+        <Ligas>3</Ligas>
+    </equipo>
+    <equipo>
+        <Localidad id="8">Portland</Localidad>
+        <ciudad habitantes="123456789"></ciudad>
+        <nombre>portland TrailBlazzers</nombre>
+        <Ligas>5</Ligas>
+    </equipo>
+    <equipo>
+        <Localidad id="8">Los Angeles</Localidad>
+        <ciudad habitantes="123456789"></ciudad>
+        <nombre>Los Angeles Lakers</nombre>
+        <Ligas>11</Ligas>
+    </equipo>
+</equiposNBA>

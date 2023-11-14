@@ -1,6 +1,6 @@
 package actividad4;
 
-public class Cliente {
+public class Cliente implements Comparable<Cliente>{
     private String nombre;
     private String dni;
     private String fechaNacimiento;
@@ -49,6 +49,11 @@ public class Cliente {
     public String toString() {
         return nombre + ", "+ dni + ", fecha Nacimiento:" + fechaNacimiento + ", saldo: "
                 + saldo ;
+    }
+
+    @Override
+    public int compareTo(Cliente c) {
+        return (int) (c.getSaldo()-this.saldo);
     }
 
     

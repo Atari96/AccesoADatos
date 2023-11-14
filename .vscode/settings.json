@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\pmora\\Documents\\FP\\SEGUNDO\\3_AccesoDatos\\gson-2.10.1.jar"
+    ]
+}

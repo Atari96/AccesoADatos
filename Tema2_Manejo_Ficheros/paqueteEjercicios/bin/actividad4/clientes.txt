@@ -1,0 +1,3 @@
+pablo morato, 1234, fecha Nacimiento:12-01, saldo: 1234.0
+pepe pepe, 3456, fecha Nacimiento:12-01, saldo: 9999.0
+ramon pe, 23, fecha Nacimiento:45, saldo: 67.0
