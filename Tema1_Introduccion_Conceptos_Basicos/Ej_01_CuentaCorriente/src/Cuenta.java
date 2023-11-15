@@ -54,13 +54,13 @@ public class Cuenta {
     public void setImporteMaxIngreso(Double importeMaxIngreso) {
         this.importeMaxIngreso = importeMaxIngreso;
     }
-    public static Double getImporteRetiro() {
+    public Double getImporteRetiro() {
         return importeRetiro;
     }
     public static void setImporteRetiro(Double importeRetiro) {
         Cuenta.importeRetiro = importeRetiro;
     }
-    public static Double getImporteIngreso() {
+    public Double getImporteIngreso() {
         return importeIngreso;
     }
     public static void setImporteIngreso(Double importeIngreso) {

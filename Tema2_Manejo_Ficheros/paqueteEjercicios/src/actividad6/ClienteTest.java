@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.OutputStream;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
@@ -92,11 +91,11 @@ public class ClienteTest {
 
         try {
             fis = new FileInputStream(file);
-            ObjectInputStream ois = new ObjectInputStream(fis);
-
+            
             // Lee un objeto serializado en cada iteración y lo agrega a la lista
             
             while (true) {
+                ObjectInputStream ois = new ObjectInputStream(fis);
                 ClienteSer cliente = (ClienteSer) ois.readObject();
                 clientesLeidos.add(cliente);
             }

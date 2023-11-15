@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class CuentaTest {
+    private static Scanner sc;
     public static boolean validarCuenta(Cuenta cuenta1){
         boolean resultado= false;
         String letras = cuenta1.getNumCuenta().substring(0, 2);
@@ -95,7 +96,6 @@ public class CuentaTest {
             try {
                 throw new NumeroNegativoException();
             } catch (NumeroNegativoException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -138,7 +138,7 @@ public class CuentaTest {
         while (opcion !=5){
             System.out.println(menu);
             System.out.println("Elige una opción\n");
-            Scanner sc = new Scanner(System.in);
+            sc = new Scanner(System.in);
                 opcion=sc.nextInt();
                 switch (opcion){
                     case 1:
