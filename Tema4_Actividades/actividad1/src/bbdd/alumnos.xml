@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos>
+    <alumno id="01">
+        <nombre>Einstein</nombre>
+        <edad>25</edad>
+        <telefono>1234</telefono>
+    </alumno>
+    <alumno id="02">
+        <nombre>Tesla</nombre>
+        <edad>29</edad>
+        <telefono>12344321</telefono>
+    </alumno>
+    <alumno id="03">
+        <nombre>Davinci</nombre>
+        <edad>33</edad>
+        <telefono>43211234</telefono>
+    </alumno>
+    <alumno id="04">
+        <nombre>Hawking</nombre>
+        <edad>55</edad>
+        <telefono>12434321</telefono>
+    </alumno>
+    <alumno id="05">
+        <nombre>Pablo</nombre>
+        <edad>22</edad>
+        <telefono>12312312</telefono>
+    </alumno>
+</alumnos>

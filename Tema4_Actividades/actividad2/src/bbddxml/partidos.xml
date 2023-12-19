@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<partidos>
+    <partido>
+        <idPartido>1</idPartido>
+        <equipoLocal>1</equipoLocal>
+        <equipoVisitante>2</equipoVisitante>
+        <ganador>1</ganador>
+    </partido>
+    <partido>
+        <idPartido>2</idPartido>
+        <equipoLocal>3</equipoLocal>
+        <equipoVisitante>4</equipoVisitante>
+        <ganador>Empate</ganador>
+    </partido>
+    <partido>
+        <idPartido>3</idPartido>
+        <equipoLocal>3</equipoLocal>
+        <equipoVisitante>2</equipoVisitante>
+        <ganador>2</ganador>
+    </partido>
+    <partido>
+        <idPartido>4</idPartido>
+        <equipoLocal>1</equipoLocal>
+        <equipoVisitante>4</equipoVisitante>
+        <ganador>1</ganador>
+    </partido>
+    <partido>
+        <idPartido>5</idPartido>
+        <equipoLocal>2</equipoLocal>
+        <equipoVisitante>1</equipoVisitante>
+        <ganador>1</ganador>
+    </partido>
+
+</partidos>

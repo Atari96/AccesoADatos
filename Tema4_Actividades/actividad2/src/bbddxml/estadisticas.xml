@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<estadisticas>
+    <estadistica>
+        <idDato>1</idDato>
+        <idPartido>1</idPartido>
+        <idJugador>1</idJugador>
+        <puntos>10</puntos>
+    </estadistica>
+    <estadistica>
+        <idDato>2</idDato>
+        <idPartido>2</idPartido>
+        <idJugador>2</idJugador>
+        <puntos>20</puntos>
+    </estadistica>
+    <estadistica>
+        <idDato>3</idDato>
+        <idPartido>3</idPartido>
+        <idJugador>3</idJugador>
+        <puntos>30</puntos>
+    </estadistica>
+    <estadistica>
+        <idDato>4</idDato>
+        <idPartido>4</idPartido>
+        <idJugador>4</idJugador>
+        <puntos>40</puntos>
+    </estadistica>
+    <estadistica>
+        <idDato>5</idDato>
+        <idPartido>5</idPartido>
+        <idJugador>5</idJugador>
+        <puntos>50</puntos>
+    </estadistica>
+</estadisticas>

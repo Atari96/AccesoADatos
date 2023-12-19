@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipos>
+    <equipo>
+        <idEquipo>1</idEquipo>
+        <nombre>Celtics</nombre>
+        <ciudad>Boston</ciudad>
+    </equipo>
+    <equipo>
+        <idEquipo>2</idEquipo>
+        <nombre>Lakers</nombre>
+        <ciudad>New York</ciudad>
+    </equipo>
+    <equipo>
+        <idEquipo>3</idEquipo>
+        <nombre>Grizzlies</nombre>
+        <ciudad>Memphis</ciudad>
+    </equipo>
+    <equipo>
+        <idEquipo>4</idEquipo>
+        <nombre>Bulls</nombre>
+        <ciudad>Chicago</ciudad>
+    </equipo>
+    <equipo>
+        <idEquipo>5</idEquipo>
+        <nombre>TimberWolves</nombre>
+        <ciudad>Minnesota</ciudad>
+    </equipo>
+</equipos>

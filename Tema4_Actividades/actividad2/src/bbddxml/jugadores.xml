@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jugadores>
+    <jugador>
+        <idJgador>1</idJgador>
+        <nombre>Pau Gasol</nombre>
+        <edad>49</edad>
+        <altura>213</altura>
+        <pais>España</pais>
+    </jugador>
+    <jugador>
+        <idJgador>2</idJgador>
+        <nombre>Ricky Rubio</nombre>
+        <edad>40</edad>
+        <altura>205</altura>
+        <pais>España</pais>
+    </jugador>
+    <jugador>
+        <idJgador>3</idJgador>
+        <nombre>Michael Jordan</nombre>
+        <edad>60</edad>
+        <altura>215</altura>
+        <pais>Estados Unidos</pais>
+    </jugador>
+    <jugador>
+        <idJgador>4</idJgador>
+        <nombre>Larry Bird</nombre>
+        <edad>66</edad>
+        <altura>220</altura>
+        <pais>Estados Unidos</pais>
+    </jugador>
+    <jugador>
+        <idJgador>5</idJgador>
+        <nombre>Antoine Griezman</nombre>
+        <edad>35</edad>
+        <altura>170</altura>
+        <pais>Francia</pais>
+    </jugador>
+</jugadores>
