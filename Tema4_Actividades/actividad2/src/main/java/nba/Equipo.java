@@ -10,7 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement(name="equipos")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Equipo implements ElementosTabla{
+public class Equipo{
     
     @XmlElement(name="idEquipo")
     private int idEquipo;
@@ -18,14 +18,13 @@ public class Equipo implements ElementosTabla{
     private String nombre;
     @XmlElement(name="ciudad")
     private String ciudad;
+    @XmlElement(name = "equipo")
     private List<Equipo> listaEquipos;
 
     public Equipo(){}
 
     public Equipo(int idEquipo, String nombre, String ciudad) {
-        this.idEquipo = idEquipo;
-        this.nombre = nombre;
-        this.ciudad = ciudad;
+        listaEquipos = new ArrayList<>();
     }
     
     public int getIdEquipo() {
@@ -63,25 +62,5 @@ public class Equipo implements ElementosTabla{
 
     public void setLstaEquipos(List<Equipo> listaEquipos) {
         this.listaEquipos = listaEquipos;
-    }
-
-    @Override
-    public List<String> getCampos() {
-        List<String> campos = new ArrayList<>();
-        campos.add("idEquipo");
-        campos.add("nombre");
-        campos.add("ciudad");
-        return campos;
-    }
-
-    @Override
-    public List<Object> getValores() {
-        List<Object> valores = new ArrayList<>();
-        valores.add(idEquipo);
-        valores.add(nombre);
-        valores.add(ciudad);
-        return valores;
-    }
-
-    
+    }    
 }

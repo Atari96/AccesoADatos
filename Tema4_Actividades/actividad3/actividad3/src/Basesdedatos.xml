@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<alumnos>
+    <alumno>
+        <clase>Bases de datos</clase>
+        <idAlumno>6</idAlumno>
+        <nombre>Mama</nombre>
+    </alumno>
+    <alumno>
+        <clase>Bases de datos</clase>
+        <idAlumno>7</idAlumno>
+        <nombre>Meme</nombre>
+    </alumno>
+    <alumno>
+        <clase>Bases de datos</clase>
+        <idAlumno>8</idAlumno>
+        <nombre>Mimi</nombre>
+    </alumno>
+    <alumno>
+        <clase>Bases de datos</clase>
+        <idAlumno>9</idAlumno>
+        <nombre>Momo</nombre>
+    </alumno>
+    <alumno>
+        <clase>Bases de datos</clase>
+        <idAlumno>10</idAlumno>
+        <nombre>Mumu</nombre>
+    </alumno>
+</alumnos>

@@ -11,7 +11,7 @@ public class Instituto {
 
     public static void main(String[] args) {
         // Datos de archivo xml a leer
-        String rutaXML = "src\\bbdd\\alumnos.xml";
+        String rutaXML = "actividad1\\src\\bbdd\\alumnos.xml";
         File f = new File(rutaXML);
         try {
             // Extraemos la informacion del xml y construcción de lista de alumnos

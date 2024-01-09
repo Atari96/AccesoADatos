@@ -8,7 +8,6 @@ import java.util.List;
 
 public class AlumnoBD {
     
-
     public AlumnoBD(){}
 
     public static boolean insertarAlumnos(List<Alumno> listaAlumnos){
@@ -24,8 +23,7 @@ public class AlumnoBD {
             String sql1="INSERT INTO alumnos(IdAlumno, NombreAlumno, EdadAlumno, TelefonoAlumno)"+ 
                                         " values("+id+",'"+nombre+"',"+edad+",'"+telefono+"')";
             System.out.println(sql1);
-            // Creamos conexion
-            
+            // Creamos conexion          
             try {
                 Connection con = DriverManager.getConnection(url, usuario, password);
                 Statement sentencia = con.createStatement();
@@ -36,8 +34,6 @@ public class AlumnoBD {
             }
             }        
         return true;
-    }
-    
-    
+    }  
 }
 
